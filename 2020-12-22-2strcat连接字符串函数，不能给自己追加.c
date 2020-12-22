@@ -7,6 +7,9 @@
 is_left_roate(char* str1, char* str2)
 {
 	int len = strlen(str1);
+	int len1= strlen(str2);
+	if (len == len1)
+		return 0;
 	strncat(str1,str1,len);
 	char* p=strstr(str1,str2);
 	if (p == NULL)//空指针，表示没有找到
